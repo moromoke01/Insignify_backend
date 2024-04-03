@@ -1,5 +1,4 @@
 const express = require('express');
-const serverless = require('serverless-http');
 const mongoose = require('mongoose');
 const axios = require('axios'); // Add this line to import mongoose
 const Question = require('./Model/QueModel');
@@ -121,6 +120,4 @@ app.listen(5000, ()=>{
     console.log("server is running on port 5000")
 });
 
-app.use('./netlify/index', app);
-module.exports.handler = serverless(app);
 
