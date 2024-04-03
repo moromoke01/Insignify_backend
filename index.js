@@ -7,25 +7,29 @@ const app = express();
 app.use(express.json());
 
 //database connection
-mongoose.connect("mongodb://localhost:27017/QuestionApi") 
-.then(() =>{
-    console.log("connected to database")
+
+const mongoUrl="mongodb+srv://janeworld:TGXtDrYucvzh7fNN@janet.gbisr18.mongodb.net/?retryWrites=true&w=majority&appName=Janet";
+
+mongoose.connect(mongoUrl, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
 })
-.catch((e) => console.log(e));
+.then(()=>{
+  console.log("connected to database")
+})
+
+
+
+
+// mongoose.connect("mongodb://localhost:27017/QuestionApi") 
+// .then(() =>{
+//     console.log("connected to database")
+// })
+// .catch((e) => console.log(e));
 
 const QuestionsAPI = "https://opentdb.com/api.php?amount=20&category=9&difficulty=easy&type=multiple";
 
 
-// app.post('/questions', async(req, res)=>{
-//     try{
-//         const response = await axios.post(`${QuestionsAPI
-//         }/questions`, req.body);
-//         console.log(response);
-//         res.status(201).json(response.data);
-//     }catch(error){
-//         res.status(400).json({message: error.message});
-//     }
-// });
 
 
 app.get('/fetch-and-save-questions', async (req, res) => {
