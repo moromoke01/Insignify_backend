@@ -1,0 +1,1109 @@
+
+    [
+       
+          {
+            "section": "Cognitive Abilities",
+            "question": "If a product costs $100 after a 20% discount, what was its original price?",
+            "options": [
+              "$234",
+              "$125",
+              "$543",
+              "$132"
+            ],
+            "correctAnswer": "$125"
+          },
+          {
+            "section": "Cognitive Abilities",
+            "question": "How many unique 4-digit PIN codes are possible if each digit can be any number from 0 to 9?",
+            "options": [
+              "11,000",
+              "4000",
+              "9000",
+              "10,000"
+            ],
+            "correctAnswer": "10,000"
+          },
+          {
+            "section": "Cognitive Abilities",
+            "question": "If a program executes 25 operations per second, how many operations will it complete in 5 minutes?",
+            "options": [
+              "6,500",
+              "5,500",
+              "7,500",
+              "8,500"
+            ],
+            "correctAnswer": "7,500"
+          },
+          {
+            "section": "Cognitive Abilities",
+            "question": "A mobile app download speed is 8 Mbps. How long does it take to download a 400 MB file in minutes?",
+            "options": [
+              "2 minutes",
+              "3 minutes",
+              "4 minutes",
+              "5 minutes"
+            ],
+            "correctAnswer": "4 minutes"
+          },
+          {
+            "section": "Cognitive Abilities",
+            "question": "If a dataset contains 250 entries, and 20% of them are outliers, how many entries are outliers?",
+            "options": [
+              "30",
+              "40",
+              "50",
+              "60"
+            ],
+            "correctAnswer": "50"
+          },
+          {
+            "section": "Cognitive Abilities",
+            "question": "If a shirt originally costs $45 and is on sale for 30% off, what is the sale price? ",
+            "options": [
+              "$31.50",
+              "$36.10",
+              "$35.10",
+              "$31.60"
+            ],
+            "correctAnswer": "$31.50"
+          },
+          {
+            "section": "Cognitive Abilities",
+            "question": "A classroom has 35 students, and the teacher wants to distribute 525 pencils equally among them. How many pencils will each student receive?",
+            "options": [
+              "10 pencils",
+              "13 pencils",
+              "17 pencils",
+              "15 pencils"
+            ],
+            "correctAnswer": "15 pencils"
+          },
+          {
+            "section": "Cognitive Abilities",
+            "question": "A software program uses 256 MB of RAM. How many programs can run simultaneously in 2 GB (1 GB = 1024 MB) of RAM without overloading the memory?",
+            "options": [
+              "4 programs",
+              "6 programs",
+              "8 programs",
+              "10 programs"
+            ],
+            "correctAnswer": "8 programs"
+          },
+          {
+            "section": "Cognitive Abilities",
+            "question": "If a train travels at a speed of 80 miles per hour, how long will it take to cover a distance of 320 miles?",
+            "options": [
+              "2 hours",
+              "4 hours",
+              "6 hours",
+              "10 hours"
+            ],
+            "correctAnswer": "4 hours"
+          },
+          {
+            "section": "Cognitive Abilities",
+            "question": "You have a rectangular garden that is 12 feet long and 8 feet wide. What is the perimeter of the garden?",
+            "options": [
+              "40 feet",
+              "50 feet",
+              "60 feet",
+              "70 feet"
+            ],
+            "correctAnswer": "40 feet"
+          },
+          {
+            "section": "Cognitive Abilities",
+            "question": "Jack and Jill have 44 cookies together. Jack has three times more cookies than Jill. How many cookies does he have?",
+            "options": [
+              "9",
+              "11",
+              "22",
+              "33"
+            ],
+            "correctAnswer": "33"
+          },
+          {
+            "section": "Cognitive Abilities",
+            "question": "53 is 25% of what number?",
+            "options": [
+              "13.25",
+              "92.75",
+              "159",
+              "141.5",
+              "212"
+            ],
+            "correctAnswer": "212"
+          },
+          {
+            "section": "Cognitive Abilities",
+            "question": "A car rental company offers two payment plans for renting a car for a day: Plan A: $50 per day with unlimited mileage. Plan B: $20 per day plus $0.15 per mile driven. If you plan to drive 200 miles in one day, which plan is cheaper?",
+            "options": [
+              "Plan A",
+              "Plan B",
+              "Both plans cost the same.",
+              "Insufficient information to determine."
+            ],
+            "correctAnswer": "Plan B"
+          },
+          {
+            "section": "Cognitive Abilities",
+            "question": "Arrange the words given below in a meaningful sequence. Police; Punishment; Crime; Judge; Judgment",
+            "options": [
+              "3, 1, 2, 4, 5",
+              "1, 2, 4, 3, 5",
+              "5, 4, 3, 2, 1",
+              "3, 1, 4, 5, 2"
+            ],
+            "correctAnswer": "3, 1, 4, 5, 2"
+          },
+          {
+            "section": "Cognitive Abilities",
+            "question": "Four people need to cross a bridge at night. They have only one torch, and the bridge is too dangerous to cross without it. The bridge can only hold two people at a time. The torch must be used at all times. If they cross separately, they take 1, 2, 7, and 10 minutes respectively to cross. What is the shortest time needed for all four of them to cross the bridge?",
+            "options": [
+              "20 minutes.",
+              "15 minutes.",
+              "17 minutes.",
+              "30 minutes."
+            ],
+            "correctAnswer": "17 minutes"
+          },
+          {
+            "section": "Cognitive Abilities",
+            "question": "A plane crashes on the border of the United States and Canada. Where do they bury the survivors?",
+            "options": [
+              "At the crash site.",
+              "In the United States.",
+              "Nowhere, survivors are not buried.",
+              "In a cemetery."
+            ],
+            "correctAnswer": "Nowhere, survivors are not buried."
+          },
+          {
+            "section": "Cognitive Abilities",
+            "question": "Choose the word which is different from the rest.",
+            "options": [
+              "Chicken",
+              "Snake",
+              "Swan",
+              "Crocodile",
+              "Frog"
+            ],
+            "correctAnswer": "Chicken"
+          },
+          {
+            "section": "Cognitive Abilities",
+            "question": "If you're running a race and you pass the person in second place, what place are you in?",
+            "options": [
+              "First place.",
+              "Second place.",
+              "Third place.",
+              "Fourth place."
+            ],
+            "correctAnswer": "Second place"
+          },
+          {
+            "section": "Cognitive Abilities",
+            "question": "You see a house with a green door, a red roof, and lots of windows. Inside, you find a white piano, a purple chair, and a large goldfish bowl. How many stairs are in the house?",
+            "options": [
+              "0",
+              "8",
+              "16",
+              "24"
+            ],
+            "correctAnswer": "0"
+          },
+          {
+            "section": "Cognitive Abilities",
+            "question": "There are three light switches outside a room. One of them controls a light bulb inside the room. The door to the room is closed, and you cannot see whether the light is on or off until you open the door. You can play around with the switches as much as you like, but once you open the door, you cannot touch the switches anymore. How can you figure out which switch controls the light bulb?",
+            "options": [
+              "Turn on one switch, wait a few minutes, then turn it off and turn another switch on before entering the room.",
+              "Turn on all the switches, wait a few minutes, then turn two off before entering the room.",
+              "Turn on one switch, wait a few minutes, then turn on another switch and enter the room immediately.",
+              "Turn on one switch, wait a few minutes, then turn it off and turn another one on. Wait a few more minutes, turn off the second switch, turn on the third switch, and then enter the room."
+            ],
+            "correctAnswer": "Turn on one switch, wait a few minutes, then turn it off and turn another switch on before entering the room."
+          },
+
+
+            
+            {
+              "section": "Personality Trait",
+               "question": "I enjoy exploring new and unfamiliar activities, even if they're outside my comfort zone.",
+               "options": [
+              "Strongly Agree",
+              "Agree",
+              "Neutral",
+              "Disagree",
+              "Strongly Disagree"
+            ]
+          },
+          {
+            "section": "Personality Trait",
+            "question": "I am willing to consider unconventional ideas and approaches in problem-solving.",
+            "options": [
+              "Strongly Agree",
+              "Agree",
+              "Neutral",
+              "Disagree",
+              "Strongly Disagree"
+            ]
+          },
+          {
+            "section": "Personality Trait",
+            "question": "How open are you to trying new foods, cuisines, or cultural experiences?",
+            "options": [
+              "Very open, I love exploring new tastes and cultures.",
+              "Moderately open, I enjoy trying new things occasionally.",
+              "Not very open, I prefer sticking to what I know and like."
+            ]
+          },
+          {
+            "section": "Personality Trait",
+            "question": "Are you comfortable with ambiguity and uncertainty in various situations?",
+            "options": [
+              "Yes, I thrive in situations where outcomes are uncertain.",
+              "Somewhat, I can adapt to uncertainty but prefer clarity.",
+              "No, I find uncertainty stressful and prefer clear guidelines."
+            ]
+          },
+          {
+            "section": "Personality Trait",
+            "question": "Do you actively seek out opportunities to learn new skills or acquire knowledge in different areas?",
+            "options": [
+              "Yes, I'm always eager to expand my knowledge and skills.",
+              "Sometimes, if the opportunity arises, I'll pursue it.",
+              "No, I prefer to focus on mastering my current skills and knowledge."
+            ]
+          },
+          {
+            "section": "Personality Trait",
+            "question": "I am meticulous about planning and organizing your tasks and schedules",
+            "options": [
+              "Strongly Agree",
+              "Agree",
+              "Neutral",
+              "Disagree",
+              "Strongly Disagree"
+            ]
+          },
+          {
+            "section": "Personality Trait",
+            "question": "Do you often find yourself setting high standards for your work and diligently meeting deadlines?",
+            "options": [
+              "Strongly Agree",
+              "Agree",
+              "Neutral",
+              "Disagree",
+              "Strongly Disagree"
+            ]
+          },
+          {
+            "section": "Personality Trait",
+            "question": "How do you handle unexpected changes or disruptions to your plans or schedules?",
+            "options": [
+              "I adapt quickly and reorganize my priorities to accommodate the changes.",
+              "I may feel stressed initially but eventually find ways to adjust and move forward.",
+              "I struggle to cope with changes and find it challenging to stay organized."
+            ]
+          },
+          {
+            "section": "Personality Trait",
+            "question": "How do you typically react when faced with a high-pressure or stressful situation in your work or studies?",
+            "options": [
+              "Remain calm and focused, finding effective solutions.",
+              "Stay composed but may feel the pressure.",
+              "Sometimes feel overwhelmed, but manage to cope.",
+              "Often feel stressed and struggle to cope."
+            ]
+          },
+          {
+            "section": "Personality Trait",
+            "question": "When faced with uncertainty or unexpected challenges, how do you maintain a sense of calm and control?",
+            "options": [
+              "By focusing on problem-solving and seeking support from others if needed.",
+              "By taking deep breaths and practicing mindfulness or relaxation techniques.",
+              "By avoiding stressful situations or distracting myself with other activities."
+            ]
+          },
+          {
+            "section": "Personality Trait",
+            "question": "How do you typically react to constructive criticism or feedback on your work?",
+            "options": [
+              "I welcome feedback as an opportunity for growth and improvement.",
+              "I'm open to feedback but may feel a bit sensitive at times.",
+              "I find feedback challenging and sometimes take it personally."
+            ]
+          },
+          {
+            "section": "Personality Trait",
+            "question": "In challenging situations, how do you manage your emotions to stay focused on the task at hand?",
+            "options": [
+              "I have strategies in place to stay calm and composed, allowing me to focus on finding solutions.",
+              "I try to manage my emotions, but it can be difficult to stay focused under pressure.",
+              "I often find myself overwhelmed by emotions, which affects my ability to focus effectively."
+            ]
+          },
+          {
+            "section": "Personality Trait",
+            "question": "How do you handle setbacks or failures in your work or studies?",
+            "options": [
+              "I view them as learning opportunities and use them to improve in the future.",
+              "I try to stay positive and focus on finding solutions to overcome the setback.",
+              "I may feel discouraged initially but ultimately find ways to bounce back and move forward.",
+              "I tend to dwell on setbacks and find it challenging to recover from them."
+            ]
+          },
+          {
+            "section": "Personality Trait",
+            "question": "You prefer working in cooperative teams where collaboration is highly valued?",
+            "options": [
+              "Strongly Agree",
+              "Agree",
+              "Neutral",
+              "Disagree",
+              "Strongly Disagree"
+            ]
+          },
+          {
+            "section": "Personality Trait",
+            "question": "You comfortable with asserting your ideas and viewpoints even when met with resistance?",
+            "options": [
+              "Strongly Agree",
+              "Agree",
+              "Neutral",
+              "Disagree",
+              "Strongly Disagree"
+            ]
+          },
+          {
+            "section": "Personality Trait",
+            "question": "How do you react when faced with competing interests or conflicting ideas in a project?",
+            "options": [
+              "Actively seek resolutions and compromises.",
+              "Attempt to find a middle ground.",
+              "Tend to go along with the majority opinions.",
+              "Prefer to avoid conflicts."
+            ]
+          },
+
+
+ 
+        {
+          "section": "Creativity and innovation",
+          "question": "How would you improve the process of recycling in a way that encourages more people to participate?",
+          "options": [
+            "Develop a mobile app that rewards users for recycling.",
+            "Redesign recycling bins to make them more visually appealing.",
+            "Create a marketing campaign emphasizing the environmental benefits."
+          ]
+        },
+        {
+        "section": "Creativity and innovation",
+          "question": "Describe a unique and creative way to use emerging technologies like blockchain in everyday life.",
+          "options": [
+            "Implement blockchain in supply chain management for product authenticity.",
+            "Develop a blockchain-based voting system for secure elections.",
+            "Create an app for tracking the origin of organic food using blockchain."
+          ]
+        },
+        {
+            "section": "Creativity and innovation",
+          "question": "If you were tasked with creating a 3D animated character for a video game, what unique traits or features would you give this character to make it memorable?",
+          "options": [
+            "The character can change shape at will, adding an element of surprise.",
+            "Give the character a distinctive and expressive facial feature.",
+            "Incorporate a captivating backstory that players can explore."
+          ]
+        },
+        {
+         "section": "Creativity and innovation",
+          "question": "Propose an innovative solution to reduce energy consumption in a smart home.",
+          "options": [
+            "Develop a mobile app that optimizes smart home device usage.",
+            "Create a software program that learns user preferences and adjusts settings accordingly.",
+            "Design a product that harvests renewable energy for smart home devices."
+          ]
+        },
+        {
+            "section": "Creativity and innovation",
+          "question": "Imagine a new way for people to learn a complex subject quickly and effectively. How would you approach it?",
+          "options": [
+            "Develop a gamified mobile app for interactive learning.",
+            "Create an online platform that adapts to each learner's pace and style.",
+            "Use data analytics to identify optimal learning paths for individuals."
+          ]
+        },
+        {
+            "section": "Creativity and innovation",
+          "question": "Suppose you're tasked with designing a new mobile application for enhancing personal cybersecurity. What innovative features would you incorporate to ensure user privacy and data protection?",
+          "options": [
+            "Implement end-to-end encryption for all communications within the app.",
+            "Develop biometric authentication methods for secure user access.",
+            "Integrate AI-driven threat detection algorithms for proactive security measures."
+          ]
+        },
+        {
+            "section": "Creativity and innovation",
+          "question": "How would you reimagine traditional shopping experiences to align with modern consumer preferences and digital trends, focusing on front-end development?",
+          "options": [
+            "Create interactive and user-friendly interfaces for seamless online shopping experiences.",
+            "Implement responsive design principles to ensure compatibility across various devices and screen sizes.",
+            "Integrate dynamic content delivery mechanisms for personalized product recommendations and promotions."
+          ]
+        },
+        {
+            "section": "Creativity and innovation",
+          "question": "Imagine a futuristic smart city where technology plays a central role in improving citizens' lives. What innovative solutions would you propose to address urban challenges, with a focus on data science?",
+          "options": [
+            "Develop predictive analytics models to anticipate traffic congestion and optimize transportation routes.",
+            "Implement machine learning algorithms for energy consumption optimization and resource allocation.",
+            "Utilize big data analytics to identify patterns in waste management and optimize recycling initiatives."
+          ]
+        },
+        {
+          "section": "Creativity and innovation",
+          "question": "If you were to design a revolutionary product for the healthcare industry, what features or capabilities would you prioritize to enhance patient care, with an emphasis on back-end development?",
+          "options": [
+            "Build a scalable and secure cloud infrastructure for storing and analyzing medical data.",
+            "Develop APIs for seamless integration with existing healthcare systems and devices.",
+            "Implement robust authentication and access control mechanisms to protect sensitive patient information."
+          ]
+        },
+        {
+          "section": "Creativity and innovation",
+          "question": "How would you leverage blockchain technology to revolutionize supply chain management, focusing on blockchain development?",
+          "options": [
+            "Create a decentralized ledger for transparent and immutable tracking of product origins and transactions",
+            "Develop smart contracts to automate payment and fulfillment processes within the supply chain.",
+            "Implement cryptographic techniques to ensure data integrity and authenticity throughout the supply chain network."
+          ]
+        },
+        {
+            "section": "Creativity and innovation",
+          "question": "You're planning a themed party and want to impress your guests with personalized invitations. Which task would you enjoy the most?",
+          "options": [
+            "Analyzing guest preferences and creating custom playlists for each attendee",
+            "Designing visually stunning invitations with interactive elements",
+            "Building a mobile app to manage RSVPs and event logistics",
+            "Using data to predict party attendance and optimize food and drink quantities"
+          ]
+        },
+        {
+            "section": "Creativity and innovation",
+          "question": "You're embarking on a solo adventure and want to document your journey through a digital platform. Which aspect of the project excites you the most?",
+          "options": [
+            "Analyzing and visualizing travel data to share insights and experiences",
+            "Designing a user-friendly interface for accessing travel tips and recommendations",
+            "Developing a mobile app for on-the-go navigation and trip planning",
+            "Exploring blockchain technology for secure and decentralized data storage"
+          ]
+        },
+        {
+            "section": "Creativity and innovation",
+          "question": "You've decided to pursue a new hobby and are torn between several options. Which activity would you find most intriguing?",
+          "options": [
+            "Analyzing weather patterns and building predictive models for outdoor adventure",
+            "Designing and creating 3D models for 3D printing and prototyping",
+            "Developing a mobile game inspired by your favorite books or movies",
+            "Exploring data visualization techniques to illustrate historical trends and patterns"
+          ]
+        },
+        {
+            "section": "Creativity and innovation",
+          "question": "You've been given the opportunity to design a community project aimed at addressing a pressing social issue. What aspect of the project would you be most excited to work on?",
+          "options": [
+            "Analyzing data to identify root causes and develop targeted interventions",
+            "Designing engaging campaigns to raise awareness and mobilize community action",
+            "Developing digital platforms for connecting volunteers and coordinating efforts",
+            "Implementing innovative solutions and measuring impact through data-driven evaluations"
+          ]
+        },
+        {
+            "section": "Creativity and innovation",
+          "question": "You're planning a weekend getaway and want to optimize your travel experience. Which task sounds the most enjoyable?",
+          "options": [
+                "Analyzing flight and hotel data to find the best deals and accommodations",
+                "Designing a travel itinerary with must-see attractions and hidden gems",
+                "Developing a mobile app for real-time updates on local events and activities",
+                "Experimenting with blockchain-based loyalty programs for travel rewards"
+          ]
+        },
+        {
+            "section": "Creativity and innovation",
+          "question": "You're organizing a charity event and want to maximize donations and engagement. Which role would you be most excited to take on?",
+          "options": [
+                   "Analyzing donor data to identify potential supporters and fundraising opportunities",
+                   "Designing promotional materials and social media campaigns to raise awareness",
+                   "Developing a mobile app for event registration and donation tracking",
+                   "Exploring blockchain solutions for transparent and secure donation processing"
+          ]
+        },       
+        {
+            "section": "Creativity and innovation",
+          "question": "You're interested in starting a new fitness routine and want to track your progress. Which approach appeals to you the most?",
+          "options": [
+                    "Analyzing workout data to optimize training plans and achieve fitness goals",
+                    "Designing a personalized exercise program tailored to individual preferences",
+                    "Developing a mobile app for tracking workouts, nutrition, and overall wellness",
+                    "Exploring blockchain-based health platforms for secure data sharing and incentivization"
+          ]
+        },
+        {
+            "section": "Creativity and innovation",
+          "question": "You're passionate about cooking and want to share your culinary creations with the world. Which project would you be most eager to tackle?",
+          "options": [
+               "Analyzing recipe data to discover new flavor combinations and cooking techniques",
+                "Designing a visually stunning cookbook with step-by-step instructions and photos",
+                "Developing a mobile app for meal planning, grocery shopping, and recipe sharing",
+                "Exploring blockchain applications for food traceability and supply chain transparency"
+          ]
+        },
+        {
+            "section": "Creativity and innovation",
+          "question": "You're planning to redecorate your living space and want to incorporate smart home technology. Which task would you be most interested in?",
+          "options": [
+              "Analyzing home automation data to optimize energy usage and improve efficiency",
+              "Designing an intuitive smart home interface for controlling lights, appliances, and security systems",
+              "Developing a mobile app for remote monitoring and control of smart home devices",
+              "Exploring blockchain solutions for secure and decentralized home automation"
+          ]
+        },
+        {
+            "section": "Creativity and innovation",
+          "question": "You're considering adopting a pet and want to ensure a perfect match. Which approach resonates with you the most?",
+          "options": [
+                    "Analyzing pet adoption data to find compatible matches based on lifestyle and preferences",
+                    "Designing an interactive platform for connecting pet seekers with shelters and rescue   organizations",
+                    "Developing a mobile app for pet care tips, training resources, and community support",
+                   "Exploring blockchain applications for pet identification and medical records management"
+
+          ]
+        },
+        {
+            "section": "Creativity and innovation",
+          "question": "You're fascinated by space exploration and want to contribute to scientific research. Which project would you be most interested in supporting?",
+          "options": [
+                "Analyzing astronomical data to discover new celestial objects and phenomena",
+                "Designing educational resources and outreach programs to inspire future generations of space", 
+                "Developing a mobile app for tracking satellite passes and observing events like meteor showers and eclipses",
+                "Exploring blockchain applications for space-based communication and data transmission"
+
+          ]
+        },
+        {
+            "section": "Creativity and innovation",
+          "question": "You're planning a weekend getaway with friends. What role would you prefer to take on?",
+          "options": [
+                "Organizing the itinerary and ensuring everyone has a memorable experience",
+                "Designing a themed photo album to capture the memories",
+                "Exploring decentralized travel options using blockchain technology"
+          ]
+        },
+        {
+            "section": "Creativity and innovation",
+          "question": "You're given the task of organizing a team-building activity for your colleagues. What approach would you be most excited about?",
+          "options": [
+               "Designing and coordinating team games and challenges",
+               "Creating visually appealing team T-shirts or badges",
+               "Exploring blockchain-based solutions for team collaboration and reward systems"
+
+          ]
+        },
+        {
+            "section": "Creativity and innovation",
+          "question": "You're attending a tech conference and have the opportunity to participate in a workshop. Which one would you choose?",
+          "options": [
+                 "Effective Project Management Strategies",
+                 "Design Thinking for Innovation",
+                 "Blockchain Applications in Business"
+          ]
+        },
+        {
+            "section": "Creativity and innovation",
+          "question": "You're tasked with organizing a charity fundraiser event. What aspect would you focus on the most?",
+          "options": [
+               "Creating and executing a marketing campaign to raise awareness and attract donors",
+               "Designing engaging and visually appealing event posters and promotional materials",
+               "Exploring blockchain solutions for transparent donation tracking and accountability"
+
+          ]
+        },
+
+
+
+                 {
+                      "section": "Aptitude",
+                        "question": "How do you feel about troubleshooting and fixing technical issues when they arise?",
+                        "options": [
+                          "I'm quite skilled at resolving technical problems.",
+                          "I can manage some issues but prefer not to.",
+                          "I find it challenging and usually seek help."
+                        ]
+                      },
+                      {
+                        "section": "Aptitude",
+                        "question": "Have you ever participated in hackathons, coding competitions, or tech-related events?",
+                        "options": [
+                          "Yes, I've been involved in multiple events and competitions.",
+                          "I've attended one or two events out of curiosity.",
+                          "No, I haven't had the opportunity to participate in such activities."
+                        ]
+                      },
+                      {
+                        "section": "Aptitude",
+                        "question": "How comfortable are you with reading technical documentation or manuals to learn new skills or troubleshoot issues?",
+                        "options": [
+                          "I'm very comfortable and often refer to documentation for guidance.",
+                          "I'm willing to use documentation if necessary but prefer more interactive learning methods.",
+                          "I find technical documentation confusing and difficult to understand."
+                        ]
+                      },
+                      {
+                        "section": "Aptitude",
+                        "question": "What sparked your interest in cybersecurity?",
+                        "options": [
+                          "The challenge of protecting digital assets and information.",
+                          "Curiosity about hacking techniques and defense strategies.",
+                          "I'm not particularly interested in cybersecurity concepts."
+                        ]
+                      },
+                      {
+                        "section": "Aptitude",
+                        "question": "How familiar are you with common cybersecurity tools and software?",
+                        "options": [
+                          "Very familiar, I've used several tools extensively.",
+                          "Somewhat familiar, I've used a few tools occasionally.",
+                          "Not familiar, I haven't used cybersecurity tools much."
+                        ]
+                      },
+                    {
+                        "section": "Aptitude",
+                        "question": "Are you drawn to exploring how electronic devices and technology work?",
+                        "options": [
+                          "Absolutely, I love taking things apart and learning how they function.",
+                          "I'm curious but don't often delve deeply into it.",
+                          "Not particularly, I'm more interested in using technology."
+                        ]
+                      },
+                       {
+                        "section": "Aptitude",
+                        "question": "You're fascinated by the idea of blockchain and its potential impact. What application would you like to explore first?",
+                        "options": [
+                          "Creating a decentralized voting system to ensure transparent and secure elections.",
+                          "Developing a blockchain-based supply chain solution to track product authenticity and traceability.",
+                          "Exploring the use of smart contracts for automating agreements and transactions."
+                        ]
+                      },
+                      {
+                        "section": "Aptitude",
+                        "question": "How would you explain blockchain technology to someone unfamiliar with it?",
+                        "options": [
+                          "A decentralized ledger system that records transactions across multiple computers.",
+                          "A digital currency system used for online transactions.",
+                          "I'm not sure how to explain blockchain technology."
+                        ]
+                      },
+                       {
+                        "section": "Aptitude",
+                        "question": "What's your interest level in learning about cryptocurrencies and their underlying blockchain technology?",
+                        "options": [
+                          "Very interested, I want to understand how cryptocurrencies work.",
+                          "Moderately interested, but I'm not sure about diving deep into it.",
+                          "Not interested, I don't see the relevance of cryptocurrencies to my interests."
+                        ]
+                      },
+                      {
+                        "section": "Aptitude",
+                        "question": "Are you familiar with any real-world applications of blockchain technology?",
+                        "options": [
+                          "Yes, I'm aware of several applications and their use cases.",
+                          "I've heard of blockchain applications but don't know many details.",
+                          "No, I'm not familiar with any practical uses of blockchain."
+                        ]
+                      },      
+                    {
+                        "section": "Aptitude",
+                        "question": "How do you feel about working with large sets of data to uncover insights and trends?",
+                        "options": [
+                          "I'm excited to dive into data and analyze it for valuable insights.",
+                          "I'm open to working with data, but it's not my preferred task.",
+                          "I feel overwhelmed by the idea of handling large amounts of data."
+                        ]
+                      },
+                       {
+                        "section": "Aptitude",
+                        "question": "What is your comfort level with learning new software or programming languages for data analysis?",
+                        "options": [
+                          "I enjoy learning new tools and languages, especially if it helps with data analysis.",
+                          "I'm willing to learn if necessary, but I prefer sticking to what I know.",
+                          "I find learning new software or programming languages daunting and intimidating."
+                        ]
+                      },
+                       {
+                        "section": "Aptitude",
+                        "question": "How do you approach problem-solving when faced with complex data-related challenges?",
+                        "options": [
+                          "I like to break down problems and explore different solutions methodically.",
+                          "I tend to avoid complex problems and seek simpler tasks.",
+                          "I feel overwhelmed and unsure where to start when faced with complex challenges."
+                        ]
+                      },
+                      {
+                        "section": "Aptitude",
+                        "question": "How do you feel about presenting findings and insights derived from data analysis to others?",
+                        "options": [
+                          "I feel confident and enjoy sharing insights with others in a clear and understandable way.",
+                          "I'm okay with presenting findings but prefer to keep it brief and straightforward.",
+                          "I feel anxious about presenting findings and worry about being misunderstood."
+                        ]
+                      },
+                      {
+                        "section": "Aptitude",
+                        "question": "How comfortable are you with reading technical documentation or articles related to data science concepts?",
+                        "options": [
+                          "I'm comfortable diving into technical documentation and articles to learn more about data science.",
+                          "I'm willing to read technical materials, but I prefer simpler explanations.",
+                          "I find technical documentation confusing and challenging to understand."
+                        ]
+                      },
+                     {
+                        "section": "Aptitude",
+                        "question": "Have you ever coded or developed a simple program or website?",
+                        "options": [
+                          "Yes, I've created and customized programs or websites.",
+                          "I've dabbled a bit but not extensively.",
+                          "No, I haven't tried coding or web development."
+                        ]
+                      },
+                      {
+                        "section": "Aptitude",
+                        "question": "How do you feel about troubleshooting and fixing technical issues when they arise?",
+                        "options": [
+                          "I'm quite skilled at resolving technical problems.",
+                          "I can manage some issues but prefer not to.",
+                          "I find it challenging and usually seek help."
+                        ]
+                      },
+                      {
+                        "section": "Aptitude",
+                        "question": "How do you feel about learning the technical aspects of how websites and web applications function behind the scenes?",
+                        "options": [
+                          "I'm curious and excited to explore how websites work from the server-side perspective.",
+                          "I'm open to learning but feel a bit intimidated by the technical details.",
+                          "I haven't thought much about it, but I'm willing to give it a try."
+                        ]
+                      },
+                      {
+                        "section": "Aptitude",
+                        "question": "What is your comfort level with learning new technical concepts and tools, even if they seem complex at first?",
+                        "options": [
+                          "I'm eager to dive into new technologies and concepts, even if they're challenging.",
+                          "I'm willing to learn, but I prefer topics that are easier to grasp initially.",
+                          "I find learning technical concepts daunting and prefer simpler topics."
+                        ]
+                      },
+                       {
+                        "section": "Aptitude",
+                        "question": "How do you feel about problem-solving and figuring out solutions to technical issues that arise while building web applications?",
+                        "options": [
+                          "I enjoy problem-solving and am excited to tackle technical challenges.",
+                          "I'm okay with problem-solving but prefer tasks that are less technical.",
+                          "I find problem-solving overwhelming, especially when it involves technical issues."
+                        ]
+                      },
+                    
+                      {
+                       "section": "Aptitude",
+                        "question": "How do you feel about learning the visual and interactive aspects of building websites and web applications?",
+                        "options": [
+                          "I'm excited to learn about creating engaging user interfaces and experiences.",
+                          "I'm open to learning, but I'm not sure how I feel about focusing on the visual aspects.",
+                          "I haven't thought much about it, but I'm willing to explore frontend development."
+                        ]
+                      },
+                      {
+                        "section": "Aptitude",
+                        "question": "What is your comfort level with learning new programming languages and tools, especially those used for frontend development?",
+                        "options": [
+                          "I'm eager to learn new programming languages and tools, even if they seem challenging at first.",
+                          "I'm willing to learn, but I prefer sticking to languages and tools I'm already familiar with.",
+                          "I find learning new programming languages and tools overwhelming."
+                        ]
+                      },
+                      {
+                        "section": "Aptitude",
+                        "question": "How do you feel about designing user interfaces and ensuring that they are intuitive and easy to use?",
+                        "options": [
+                          "I enjoy the creative aspect of designing user interfaces and want to create great user experiences.",
+                          "I'm okay with design, but I prefer focusing on functionality rather than aesthetics.",
+                          "I haven't thought much about design, but I'm open to learning about it."
+                        ]
+                      },
+                      {
+                        "section": "Aptitude",
+                        "question": "How do you feel about testing and ensuring the responsiveness of websites and web applications across different devices and screen sizes?",
+                        "options": [
+                          "I understand the importance of responsive design and am eager to learn how to test and optimize for various devices.",
+                          "I'm willing to test responsiveness, but I prefer tasks that focus more on coding and development.",
+                          "I haven't thought much about testing across different devices, but I'm open to learning about it."
+                        ]
+                      },
+                      {
+                        "section": "Aptitude",
+                        "question": "How do you feel about collaborating with backend developers to integrate frontend and backend functionalities seamlessly?",
+                        "options": [
+                          "I'm excited about collaborating with backend developers to create fully functional web applications.",
+                          "I'm open to collaboration, but I prefer focusing on frontend tasks rather than backend integration.",
+                          "I haven't considered collaboration much, but I'm willing to work with others if needed."
+                        ]
+                      },
+                    {
+                        "section": "Aptitude",
+                        "question": "How do you prioritize tasks when working on a project?",
+                        "options": [
+                          "I prioritize tasks based on their impact on the project's goals and deadlines.",
+                          "I tend to tackle tasks as they come without a specific prioritization strategy.",
+                          "I find it difficult to prioritize tasks and often feel overwhelmed."
+                        ]
+                      },
+                      {
+                        "section": "Aptitude",
+                        "question": "How do you handle feedback and suggestions from stakeholders?",
+                        "options": [
+                          "I value feedback and actively seek input from stakeholders to improve the product.",
+                          "I consider feedback but may struggle to incorporate it effectively into the project.",
+                          "I find feedback challenging to handle and prefer to work independently."
+                        ]
+                      },
+                      {
+                        "section": "Aptitude",
+                        "question": "How do you approach market research and understanding customer needs?",
+                        "options": [
+                          "I conduct thorough market research and gather insights to inform product decisions.",
+                          "I rely on intuition rather than extensive research when considering customer needs.",
+                          "I find market research daunting and tend to avoid it."
+                        ]
+                      },
+                      {
+                        "section": "Aptitude",
+                        "question": "How do you collaborate with cross-functional teams in a project?",
+                        "options": [
+                          "I enjoy collaborating with various teams and believe it's essential for project success.",
+                          "I prefer to work independently rather than collaborating with others.",
+                          "I find collaboration challenging and prefer to work within my own team."
+                        ]
+                      },
+                       {
+                        "section": "Aptitude",
+                        "question": "How do you handle changes and unexpected challenges during a project?",
+                        "options": [
+                          "I adapt to changes quickly and see them as opportunities for innovation.",
+                          "I may struggle to adapt to changes but try to find solutions as they arise.",
+                          "I find changes overwhelming and may become stressed during unexpected challenges."
+                        ]
+                      },
+                       {
+                        "section": "Aptitude",
+                        "question": "When considering designing a new product, what aspect do you prioritize?",
+                        "options": [
+                          "Making it visually appealing with attractive colors and shapes.",
+                          "Identifying the problems it could solve for people.",
+                          "Determining the potential selling price of the product."
+                        ]
+                      },
+                       {
+                        "section": "Aptitude",
+                        "question": "If tasked with designing a new chair, what would be your initial focus?",
+                        "options": [
+                          "Reviewing existing chair designs for inspiration.",
+                          "Seeking feedback from potential users about their chair preferences.",
+                          "Brainstorming ways to enhance the comfort and utility of the chair."
+                        ]
+                      },
+                      {
+                        "section": "Aptitude",
+                        "question": "Imagine creating a product to assist people in carrying groceries. What would be your primary concern?",
+                        "options": [
+                          "Ensuring the product has a trendy and fashionable design.",
+                          "Designing a sturdy and ergonomic solution for easy carrying.",
+                          "Keeping production costs low to make the product affordable."
+                        ]
+                      },
+                      {
+                        "section": "Aptitude",
+                        "question": "How do you approach the process of brainstorming ideas for a new product design?",
+                        "options": [
+                          "I enjoy brainstorming sessions and actively contribute creative ideas to the process.",
+                          "I participate in brainstorming sessions but may struggle to generate unique ideas.",
+                          "I find brainstorming sessions challenging and prefer to follow existing design templates."
+                        ]
+                      },
+                      {
+                        "section": "Aptitude",
+                        "question": "How do you stay updated on current design trends and technologies?",
+                        "options": [
+                          "I actively research and explore new design trends and technologies to incorporate into my work.",
+                          "I occasionally search for design trends but may struggle to keep up with the latest developments.",
+                          "I don't actively seek out new design trends or technologies."
+                        ]
+                    },
+                   
+                      {
+                        "section": "Aptitude",
+                        "question": "Have you ever developed a mobile application or contributed to mobile app development projects?",
+                        "options": [
+                          "Yes, I've developed mobile apps or contributed significantly to mobile app projects.",
+                          "I've dabbled a bit but haven't extensively worked on mobile app development.",
+                          "No, I haven't tried mobile app development."
+                        ]
+                      },
+                      {
+                        "section": "Aptitude",
+                        "question": "If you were to create a mobile app, what would be your main goal?",
+                        "options": [
+                          "Making sure the app works smoothly for users.",
+                          "Designing a cool and attractive interface.",
+                          "Protecting users' data from hackers and threats."
+                        ]
+                      },
+                       {
+                        "section": "Aptitude",
+                        "question": "What's the first thing you would do before making a new mobile app?",
+                        "options": [
+                          "Find out what people want from the app.",
+                          "Look at other apps for inspiration.",
+                          "Think about how to make money from the app."
+                        ]
+                      },
+                       {
+                        "section": "Aptitude",
+                        "question": "You want to make an app for keeping track of your exercise. What's the most important thing to include?",
+                        "options": [
+                          "A way to see how far you've run or cycled.",
+                          "A cool design with lots of colors and pictures.",
+                          "A system to keep your personal data safe."
+                        ]
+                      },
+                       {
+                        "section": "Aptitude",
+                        "question": "How would you decide what your app looks like?",
+                        "options": [
+                          "By asking people what they like.",
+                          "By choosing colors and pictures you think are cool.",
+                          "By making sure it's easy for everyone to use."
+                        ]
+                      },
+                 
+
+
+                    {
+                        "section": "skills and interest",
+                        "question": "Please rate your proficiency in programming languages (e.g., Python, Java, JavaScript) on a scale from 1 to 5, where 1 is novice, and 5 is expert.",
+                        "options": [
+                          "Novice",
+                          "Basic",
+                          "Intermediate",
+                          "Advanced",
+                          "Expert"
+                        ],
+                        "learningTracks": []
+                      },
+                      {
+                        "section": "skills and interest",
+                        "question": "Indicate your familiarity with design software (e.g., Adobe Creative Suite, Figma, Sketch) on a scale from 1 to 5, where 1 is unfamiliar, and 5 is highly proficient.",
+                        "options": [
+                          "Unfamiliar",
+                          "Basic",
+                          "Proficient",
+                          "Advanced",
+                          "Highly Proficient"
+                        ],
+                        "learningTracks": []
+                      },
+                      {
+                        "section": "skills and interest",
+                        "question": "How comfortable are you with data analysis tools (e.g., Excel, R, Tableau)?",
+                        "options": [
+                          "Very comfortable",
+                          "Moderately comfortable",
+                          "Not comfortable"
+                        ],
+                        "learningTracks": []
+                      },
+                      {
+                        "section": "skills and interest",
+                        "question": "Are you skilled in 3D modeling and animation software (e.g., Blender, Maya, Cinema 4D)?",
+                        "options": [
+                          "Yes, I'm experienced.",
+                          "I have some experience.",
+                          "No, I'm not skilled in this area."
+                        ],
+                        "learningTracks": []
+                      },
+                      {
+                        "section": "skills and interest",
+                        "question": "How confident are you in your ability to write code for web development (HTML, CSS, JavaScript)?",
+                        "options": [
+                          "Very confident",
+                          "Moderately confident",
+                          "Not confident"
+                        ],
+                        "learningTracks": []
+                      },
+                      {
+                        "section": "skills and interest",
+                        "question": "Do you have experience with version control systems such as Git or SVN?",
+                        "options": [
+                          "Yes, I'm proficient in using version control systems.",
+                          "I've used them occasionally but still learning.",
+                          "No, I haven't used version control systems before."
+                        ],
+                        "learningTracks": []
+                      },
+                      {
+                        "section": "skills and interest",
+                        "question": "Are you familiar with user experience (UX) design principles and methodologies?",
+                        "options": [
+                          "Yes, I have a good understanding and have applied UX principles in projects.",
+                          "I'm familiar but haven't applied them extensively.",
+                          "No, I'm not familiar with UX design principles."
+                        ],
+                        "learningTracks": []
+                      },
+                      {
+                        "section": "skills and interest",
+                        "question": "How skilled are you in digital marketing tools and analytics platforms (e.g., Google Analytics, SEO tools)?",
+                        "options": [
+                          "Highly skilled, I can effectively use various digital marketing tools and platforms.",
+                          "Moderately skilled, I have some experience with digital marketing tools.",
+                          "Not skilled, I have limited experience in this area."
+                        ],
+                        "learningTracks": []
+                      },
+                      {
+                        "section": "skills and interest",
+                        "question": "Have you ever worked with cloud computing platforms such as AWS, Azure, or Google Cloud?",
+                        "options": [
+                          "Yes, I have hands-on experience with cloud computing platforms.",
+                          "I have some theoretical knowledge but no practical experience.",
+                          "No, I haven't worked with cloud computing platforms before."
+                        ],
+                        "learningTracks": []
+                      },
+                      {
+                        "section": "skills and interest",
+                        "question": "Are you interested in or have experience with machine learning or artificial intelligence technologies?",
+                        "options": [
+                          "Yes, I'm highly interested and have practical experience in machine learning or AI.",
+                          "I'm interested but haven't had practical experience yet.",
+                          "No, I'm not interested or experienced in machine learning or AI technologies."
+                        ],
+                        "learningTracks": []
+                      }
+              
+
+                ]
+                  
+         
+
+ 

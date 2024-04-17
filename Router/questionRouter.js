@@ -6,14 +6,16 @@ const{
     getAllQuestions,
     getQuestionById,
     updateQuestion,
-    deleteQuestion
+    deleteQuestion,
+    submitResponses
   } = require('../controller/QuestionController');
 
   
-router.get('/fetch-and-save-questions', fetchAndSaveQuestions);
+router.post('/fetch-and-save-questions', fetchAndSaveQuestions);
 router.get('/questions', getAllQuestions);
 router.get('/questions/:id', getQuestionById);
 router.patch('/questions/:id', updateQuestion);
 router.delete('/questions/:id', deleteQuestion);
+router.post('/submitResponses', submitResponses);
 
 module.exports = router;

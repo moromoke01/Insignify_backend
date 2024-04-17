@@ -6,15 +6,15 @@ const questionSchema = new mongoose.Schema(
             type: String,
             
         },
-        correct_answer:{
+        correctAnswer:{
             type:String,
            
         },
-        incorrect_answers:{
+        options:{
             type:[String]
             
         },
-        category:{
+        section:{
             type: String
           
         }
@@ -24,6 +24,6 @@ const questionSchema = new mongoose.Schema(
     timestamps: true,
 });
 
-const Question = mongoose.model('QuestionList', questionSchema);
+const Question = mongoose.model('PsychometricTest', questionSchema);
 
 module.exports = Question;

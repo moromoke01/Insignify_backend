@@ -1,23 +1,14 @@
+const mongoose = require('mongoose');
 const Question = require('../Model/QueModel');
-const ResponseModel = require('../Model/ResponseModel'); 
 const psychometricQuestions = require('../Questions.json');
-const fs = require('fs');
-// console.log(psychometricQuestions);
 
 async function fetchAndSaveQuestions(req, res) {
     try {
-        const questions = psychometricQuestions;
-       console.log(questions);
+        // Insert data into the database
+        const collection = mongoose.connection.db.collection('QuestionList');
+        await collection.insertMany(psychometricQuestions);
+        console.log('Questions saved to database');
 
-        for (const q of questions) {
-            const newQuestion = new Question({
-                section: q.section,
-                question: q.question,
-                correctAnswer: q.correctAnswer,
-                options: q.options
-            });
-            await newQuestion.save();
-        }
         res.status(200).json({
             message: 'Questions saved to database'
         });
@@ -80,29 +71,10 @@ async function deleteQuestion(req, res) {
     }
 }
 
-
-
-// POST route for submitting responses
-async function submitResponses(req, res) {
-  try {
-    const responses = req.body.responses;
-    // Save the responses to the database
-    await ResponseModel.create(responses);
-    // Respond with a success message
-    res.status(200).json({ message: 'Test responses submitted successfully' });
-  } catch (error) {
-    console.error('Error submitting responses:', error);
-    res.status(500).json({ error: 'Internal server error' });
-  }
-}
-
-
-
 module.exports = {
     fetchAndSaveQuestions,
     getAllQuestions,
     getQuestionById,
     updateQuestion,
-    deleteQuestion,
-    submitResponses
+    deleteQuestion
 };

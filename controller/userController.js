@@ -1,4 +1,5 @@
 const User = require("../Model/User");
+const bcryptjs = require('bcryptjs');
 
 //sign up route
 
@@ -9,8 +10,8 @@ async function Signup(req, res){
         lastName,
         age,
         gender,
-        country,
-        careerStatus,
+        location,
+        education,
         email,
         password
        } = req.body;
@@ -24,19 +25,22 @@ async function Signup(req, res){
         })
        }
 
+       const hashedPassword = await bcryptjs.hash(password, 10);
+
        await User.create({
         firstName,
         lastName,
         age,
         gender,
-        country,
-        careerStatus,
+        location,
+        education,
         email,
-        password
+        password: hashedPassword
        })
        res.status(201).json({
         message: 'User successfully registered'
        })
+       console.log("User successfully registered");
     }catch(error){
     console.error('Error during sign-up', error);
      res.status(500).json({
@@ -60,7 +64,7 @@ async function login(req, res){
             });
     }
     //compare the provided password with the stored password
-    const isPasswordValid = await bcrypt.compare( password, findUser.password);
+    const isPasswordValid = await bcryptjs.compare( password, findUser.password);
 
     if(!isPasswordValid){
         return res.status(401).json({
@@ -71,9 +75,10 @@ async function login(req, res){
     res.status(200).json({
         message: 'Login successful',
         userId: findUser._id,
-        fname: findUser.firstName,
-        lname: findUser.lastName,
-        pwd: findUser.password
+        // fname: findUser.firstName,
+        // lname: findUser.lastName,
+        email: findUser.email,
+        password: findUser.password
     })
 
     }catch(error){
