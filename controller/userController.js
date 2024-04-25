@@ -16,6 +16,13 @@ async function Signup(req, res){
         password
        } = req.body;
 
+     // Check if required fields are not empty
+     if (!email || !password) {
+        return res.status(400).json({
+            message: 'Email and password are required'
+        });
+    }
+
        //checking if email already exist
        const ExistingUser = await User.findOne({email});
 
