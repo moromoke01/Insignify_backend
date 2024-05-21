@@ -1,7 +1,7 @@
 const Contact = require("../Model/ContactModel");
 
 
-export async function contactInfo(req, res){
+async function contactInfo(req, res){
     try{
         const {name, email, subject, message} = req.body;
 
@@ -25,7 +25,7 @@ export async function contactInfo(req, res){
 }
 
 //get all messages
-export async function getAllMessages(req, res){
+async function getAllMessages(req, res){
     try{
         const messages = await Contact.find();
         res.json(messages);
@@ -38,7 +38,7 @@ export async function getAllMessages(req, res){
 }
 
 //get each message submitted
-export async function getMessageById(req, res){
+async function getMessageById(req, res){
     try{
      const message = await Contact.findById(req.params.id);
      if(!message){
@@ -55,7 +55,7 @@ export async function getMessageById(req, res){
 }
 
 //delete message
-export async function deleteMessage(req, res){
+async function deleteMessage(req, res){
     try{
     const {id} = req.params;
     const message = await message.findByIdAndDelete(id);
@@ -72,3 +72,10 @@ export async function deleteMessage(req, res){
         res.status(500).json({ message: error.message });
     }
 }
+
+module.exports = {
+    contactInfo,
+    getAllMessages,
+    getMessageById,
+    deleteMessage,
+};
