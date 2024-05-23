@@ -33,6 +33,7 @@ async function signup(req, res) {
       factor,
       password,
     } = req.body;
+    console.log('Signup request received:', req.body);
 
     // Checking if email already exists
     const existingUser = await User.findOne({ email });
@@ -46,6 +47,8 @@ async function signup(req, res) {
     const hashedPassword = await bcryptjs.hash(password, 10);
 
     const otp = Math.floor(100000 + Math.random() * 900000).toString(); // Generate 6-digit OTP
+
+    console.log('Generated OTP:', otp);
 
     await User.create({
       fullName,
