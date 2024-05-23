@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const jwt = require('jsonwebtoken');
 const bcryptjs = require('bcryptjs');
-const User = require('../Model/User');
+const Applicant = require('../Model/Applicant');
 require('dotenv').config();
 
 const app = express();
@@ -36,7 +36,7 @@ async function signup(req, res) {
     console.log('Signup request received:', req.body);
 
     // Checking if email already exists
-    const existingUser = await User.findOne({ email });
+    const existingUser = await Applicant.findOne({ email });
 
     if (existingUser) {
       return res.status(405).json({
@@ -50,7 +50,7 @@ async function signup(req, res) {
 
     console.log('Generated OTP:', otp);
 
-    await User.create({
+    await Applicant.create({
       fullName,
       email,
       age,
@@ -89,7 +89,7 @@ async function signup(req, res) {
 app.post('/verify-otp', async (req, res) => {
   const { email, otp } = req.body;
   try {
-    const user = await User.findOne({ email });
+    const user = await Applicant.findOne({ email });
 
     if (!user) {
       return res.status(400).json({ message: 'Invalid email' });
@@ -115,7 +115,7 @@ async function login(req, res){
       const { email, password } = req.body;
 
       //find user by email
-      const findUser = await User.findOne({email});
+      const findUser = await Applicant.findOne({email});
 
       if(!findUser){
           return res.status(404).json({
