@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const jwt = require('jsonwebtoken');
 const bcryptjs = require('bcryptjs');
-const Applicant = require('../Model/Applicant');
+const Applicant = require('../Model/User');
 require('dotenv').config();
 
 const app = express();
@@ -160,7 +160,7 @@ async function login(req, res){
 
 async function getAllUsers(req, res) {
   try {
-      const Users = await User.find();
+      const Users = await Applicant.find();
       res.json(Users);
   } catch (error) {
       res.status(500).json({
