@@ -12,13 +12,13 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // Email configuration
-const transporter = nodemailer.createTransport({
-  service: 'Gmail',
-  auth: {
-    user: 'janetmoromoke5@gmail.com',
-    pass: 'Bello@2024',
-  },
-});
+// const transporter = nodemailer.createTransport({
+//   service: 'Gmail',
+//   auth: {
+//     user: 'janetmoromoke5@gmail.com',
+//     pass: 'Bello@2024',
+//   },
+// });
 
 const secretKey = process.env.JWT_SECRET_KEY;
 
@@ -68,11 +68,11 @@ async function signup(req, res) {
     });
 
     // Send OTP email
-    await transporter.sendMail({
-      to: email,
-      subject: 'Your OTP Code',
-      // text: `Your OTP code is ${otp}`,
-    });
+    // await transporter.sendMail({
+    //   to: email,
+    //   subject: 'Your OTP Code',
+    //   text: `Your OTP code is ${otp}`,
+    // });
 
     res.status(201).json({
       message: 'User successfully registered. Please check your email for the OTP.',
