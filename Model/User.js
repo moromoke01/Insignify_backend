@@ -10,9 +10,9 @@ const ApplicantSchema = new mongoose.Schema({
   career: { type: String, required: true },
   factor: { type: String, required: true },
   password: { type: String, required: true },
-  otp: { type: String },
-  otpExpires: { type: Date },
-  verified: { type: Boolean, default: false },
+  // otp: { type: String },
+  // otpExpires: { type: Date },
+  // verified: { type: Boolean, default: false },
     
 },
 // {
