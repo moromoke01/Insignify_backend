@@ -24,21 +24,6 @@ const secretKey = process.env.JWT_SECRET_KEY;
 
 async function signup(req, res) {
   try {
-
-     // Website you wish to allow to connect
-    //  res.setHeader('Access-Control-Allow-Origin', 'https://capstone-tec4dev.vercel.app');
-
-     // Request methods you wish to allow
-     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
- 
-     // Request headers you wish to allow
-     res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
- 
-     // Set to true if you need the website to include cookies in the requests sent
-     // to the API (e.g. in case you use sessions)
-     res.setHeader('Access-Control-Allow-Credentials', true);
-
-
     const {
       fullName,
       email,
@@ -63,9 +48,9 @@ async function signup(req, res) {
 
     const hashedPassword = await bcryptjs.hash(password, 10);
 
-    const otp = Math.floor(100000 + Math.random() * 900000).toString(); // Generate 6-digit OTP
+    // const otp = Math.floor(100000 + Math.random() * 900000).toString(); // Generate 6-digit OTP
 
-    console.log('Generated OTP:', otp);
+    // console.log('Generated OTP:', otp);
 
     await Applicant.create({
       fullName,
@@ -77,16 +62,16 @@ async function signup(req, res) {
       career,
       factor,
       password: hashedPassword,
-      otp, // Store OTP
-      otpExpires: Date.now() + 3600000, // 1 hour expiration
-      verified: false,
+      // otp, // Store OTP
+      // otpExpires: Date.now() + 3600000, // 1 hour expiration
+      // verified: false,
     });
 
     // Send OTP email
     await transporter.sendMail({
       to: email,
       subject: 'Your OTP Code',
-      text: `Your OTP code is ${otp}`,
+      // text: `Your OTP code is ${otp}`,
     });
 
     res.status(201).json({
