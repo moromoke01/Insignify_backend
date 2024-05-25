@@ -4,6 +4,7 @@ const nodemailer = require('nodemailer');
 const jwt = require('jsonwebtoken');
 const bcryptjs = require('bcryptjs');
 const Applicant = require('../Model/User');
+const cors = require('cors');
 require('dotenv').config();
 
 const app = express();
