@@ -1,15 +1,37 @@
 const mongoose = require("mongoose")
 
 const ApplicantSchema = new mongoose.Schema({
-   fullName: { type: String, required: true },
-  email: { type: String, required: true, unique: true },
-  age: { type: Number, required: true },
-  gender: { type: String, required: true },
-  occupation: { type: String, required: true },
-  education: { type: String, required: true },
-  career: { type: String, required: true },
-  factor: { type: String, required: true },
-  password: { type: String, required: true },
+  fullName:{
+    type: String
+},
+email:{
+    type: String,
+    unique:true,
+    required: true
+},
+password:{
+    type: String,
+    required: true
+},
+age:{
+    type:String, 
+    
+},
+gender:{
+    type: String
+}, 
+education:{
+    type: String
+},
+ocupation:{
+    type:String
+},
+career:{
+  type: String
+},
+factor:{
+    type: String
+}
   // otp: { type: String },
   // otpExpires: { type: Date },
   // verified: { type: Boolean, default: false },
