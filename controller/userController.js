@@ -12,13 +12,13 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // Email configuration
-// const transporter = nodemailer.createTransport({
-//   service: 'Gmail',
-//   auth: {
-//     user: 'janetmoromoke5@gmail.com',
-//     pass: 'Bello@2024',
-//   },
-// });
+const transporter = nodemailer.createTransport({
+  service: 'Gmail',
+  auth: {
+    user: 'janetmoromoke5@gmail.com',
+    pass: 'Bello@2024',
+  },
+});
 
 const secretKey = process.env.JWT_SECRET_KEY;
 
@@ -48,9 +48,9 @@ async function signup(req, res) {
 
     const hashedPassword = await bcryptjs.hash(password, 10);
 
-    // const otp = Math.floor(100000 + Math.random() * 900000).toString(); // Generate 6-digit OTP
+    const otp = Math.floor(100000 + Math.random() * 900000).toString(); // Generate 6-digit OTP
 
-    // console.log('Generated OTP:', otp);
+    console.log('Generated OTP:', otp);
 
     await User.create({
       fullName,
@@ -62,17 +62,17 @@ async function signup(req, res) {
       career,
       factor,
       password: hashedPassword,
-      // otp, // Store OTP
-      // otpExpires: Date.now() + 3600000, // 1 hour expiration
-      // verified: false,
+      otp, // Store OTP
+      otpExpires: Date.now() + 3600000, // 1 hour expiration
+      verified: false,
     });
 
     // Send OTP email
-    // await transporter.sendMail({
-    //   to: email,
-    //   subject: 'Your OTP Code',
-    //   text: `Your OTP code is ${otp}`,
-    // });
+    await transporter.sendMail({
+      to: email,
+      subject: 'Your OTP Code',
+      text: `Your OTP code is ${otp}`,
+    });
 
     res.status(201).json({
       message: 'User successfully registered. Please check your email for the OTP.',
