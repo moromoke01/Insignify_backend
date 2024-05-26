@@ -4,6 +4,7 @@ const nodemailer = require('nodemailer');
 const jwt = require('jsonwebtoken');
 const bcryptjs = require('bcryptjs');
 const User = require('../Model/User');
+const UserVerification = require('../Model/OTPVerification');
 const cors = require('cors');
 require('dotenv').config();
 
@@ -11,16 +12,16 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
+const secretKey = process.env.JWT_SECRET_KEY;
+
 // Email configuration
 const transporter = nodemailer.createTransport({
-  service: 'Gmail',
+  service: 'gmail',
   auth: {
-    user: 'janetmoromoke5@gmail.com',
-    pass: 'Bello@2024',
+    user: process.env.AUTH_EMAIL,
+    pass: process.env.AUTH_PASS,
   },
 });
-
-const secretKey = process.env.JWT_SECRET_KEY;
 
 async function signup(req, res) {
   try {
@@ -48,11 +49,7 @@ async function signup(req, res) {
 
     const hashedPassword = await bcryptjs.hash(password, 10);
 
-    const otp = Math.floor(100000 + Math.random() * 900000).toString(); // Generate 6-digit OTP
-
-    console.log('Generated OTP:', otp);
-
-    await User.create({
+    const newUser = await User.create({
       fullName,
       email,
       age,
@@ -62,17 +59,10 @@ async function signup(req, res) {
       career,
       factor,
       password: hashedPassword,
-      otp, // Store OTP
-      otpExpires: Date.now() + 3600000, // 1 hour expiration
       verified: false,
     });
 
-    // Send OTP email
-    await transporter.sendMail({
-      to: email,
-      subject: 'Your OTP Code',
-      text: `Your OTP code is ${otp}`,
-    });
+    await sendVerificationEmail(newUser, res);
 
     res.status(201).json({
       message: 'User successfully registered. Please check your email for the OTP.',
@@ -88,92 +78,104 @@ async function signup(req, res) {
 }
 
 // OTP verification endpoint
-app.post('/verify-otp', async (req, res) => {
-  const { email, otp } = req.body;
+async function sendVerificationEmail(user, res) {
   try {
-    const user = await User.findOne({ email });
+    const otp = `${Math.floor(1000 + Math.random() * 9000)}`;
+    const mailOptions = {
+      from: process.env.AUTH_EMAIL,
+      to: user.email,
+      subject: 'Verify your Email',
+      text: `Your OTP code is ${otp}`,
+    };
 
-    if (!user) {
-      return res.status(400).json({ message: 'Invalid email' });
-    }
+    const saltRounds = 10;
+    const hashedOtp = await bcryptjs.hash(otp, saltRounds);
+    const newOTPVerification = new UserVerification({
+      userId: user._id,
+      otp: hashedOtp,
+      createdAt: Date.now(),
+      expiresAt: Date.now() + 3600000, // 1 hour
+    });
 
-    if (user.otp === otp && user.otpExpires > Date.now()) {
-      user.verified = true;
-      user.otp = null; // Clear OTP after successful verification
-      user.otpExpires = null;
-      await user.save();
-      return res.json({ message: 'Email verified successfully' });
-    }
+    await newOTPVerification.save();
+    await transporter.sendMail(mailOptions);
 
-    res.status(400).json({ message: 'Invalid or expired OTP' });
+    res.json({
+      status: 'Pending',
+      message: 'Verification OTP email sent',
+      data: {
+        userId: user._id,
+        email: user.email,
+      },
+    });
   } catch (error) {
-    res.status(500).json({ message: 'Server error' });
+    res.json({
+      status: 'Failed',
+      message: error.message,
+    });
+    console.error(error);
   }
-});
+}
 
-//login route
-async function login(req, res){
-  try{
-      const { email, password } = req.body;
+// Login route
+async function login(req, res) {
+  try {
+    const { email, password } = req.body;
 
-      //find user by email
-      const findUser = await User.findOne({email});
+    const findUser = await User.findOne({ email });
 
-      if(!findUser){
-          return res.status(404).json({
-              message: 'User not found'
-          });
-  }
-  //compare the provided password with the stored password
-  const isPasswordValid = await bcryptjs.compare( password, findUser.password);
+    if (!findUser) {
+      return res.status(404).json({
+        message: 'User not found',
+      });
+    }
 
-  if(!isPasswordValid){
+    const isPasswordValid = await bcryptjs.compare(password, findUser.password);
+
+    if (!isPasswordValid) {
       return res.status(401).json({
-          message: 'Invalid email or password'
-      })
-  }
+        message: 'Invalid email or password',
+      });
+    }
 
-  //User is authenticated, generate a token or session
-  const token = jwt.sign({ userId: findUser._id}, secretKey);
-  res.cookie("token", token, {
-    httpOnly: true,
-    // Additional cookie options if needed
-    // secure: true,
-    // sameSite: "strict",
-  });
+    const token = jwt.sign({ userId: findUser._id }, secretKey);
+    res.cookie("token", token, {
+      httpOnly: true,
+    });
 
-  res.status(200).json({
+    res.status(200).json({
       message: 'Login successful',
       userId: findUser._id,
       fullName: findUser.fullName,
       email: findUser.email,
-      password: findUser.password,
-      token:token
-  })
-
-  }catch(error){
-      console.error('Error:', error);
-      res.status(500).json({
-          message: 'Internal Server error'
-      })
-  };
-};
-
-
-async function getAllUsers(req, res) {
-  try {
-      const Users = await Applicant.find();
-      res.json(Users);
+      token: token,
+    });
   } catch (error) {
-      res.status(500).json({
-          message: error.message
-      });
+    console.error('Error:', error);
+    res.status(500).json({
+      message: 'Internal Server error',
+    });
   }
 }
 
-// app.post('/signup', signup);
+async function getAllUsers(req, res) {
+  try {
+    const users = await User.find();
+    res.json(users);
+  } catch (error) {
+    res.status(500).json({
+      message: error.message,
+    });
+  }
+}
+
+// Define routes
+app.post('/signup', signup);
+app.post('/login', login);
+app.get('/users', getAllUsers);
 
 module.exports = {
   signup,
   login,
+  getAllUsers,
 };
