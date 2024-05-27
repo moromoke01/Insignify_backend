@@ -80,7 +80,8 @@ async function signup(req, res) {
 // OTP verification endpoint
 async function sendVerificationEmail(user, res) {
   try {
-    const otp = `${Math.floor(1000 + Math.random() * 9000)}`;
+    const otp = `${Math.floor(100000 + Math.random() * 900000)}`;
+
     const mailOptions = {
       from: process.env.AUTH_EMAIL,
       to: user.email,
@@ -114,6 +115,54 @@ async function sendVerificationEmail(user, res) {
       message: error.message,
     });
     console.error(error);
+  }
+}
+
+//verify otp route
+async function verifyOTP(req, res) {
+  try {
+    const { userId, otp } = req.body;
+    if (!userId || !otp) {
+      throw new Error("Empty OTP details are not allowed");
+    }
+
+    const userVerificationRecord = await UserVerification.find({ userId });
+
+    if (userVerificationRecord.length <= 0) {
+      // No record found
+      throw new Error("Account record doesn't exist or has been verified. Please signup or login.");
+    }
+
+    // User OTP record exists
+    const { expiresAt } = userVerificationRecord[0];
+    const hashedOTP = userVerificationRecord[0].otp;
+
+    if (expiresAt < Date.now()) {
+      // User OTP record has expired
+      await UserVerification.deleteMany({ userId });
+      throw new Error("Code has expired. Please request again.");
+    }
+
+    const validOTP = await bcryptjs.compare(otp, hashedOTP);
+
+    if (!validOTP) {
+      // Supplied OTP is wrong
+      throw new Error("Invalid code passed. Check your inbox.");
+    }
+
+    // Success
+    await User.updateOne({ _id: userId }, { verified: true });
+    await UserVerification.deleteMany({ userId });
+    res.json({
+      status: "verified",
+      message: "User email verified successfully",
+    });
+  } catch (error) {
+    console.log(error);
+    res.json({
+      status: "FAILED",
+      message: error.message,
+    });
   }
 }
 
@@ -170,12 +219,14 @@ async function getAllUsers(req, res) {
 }
 
 // Define routes
-app.post('/signup', signup);
-app.post('/login', login);
-app.get('/users', getAllUsers);
+// app.post('/signup', signup);
+// app.post('/login', login);
+// app.post('/verifyOTP', verifyOTP);  // Added the route for OTP verification
+// app.get('/users', getAllUsers);
 
 module.exports = {
   signup,
   login,
   getAllUsers,
+  verifyOTP
 };
