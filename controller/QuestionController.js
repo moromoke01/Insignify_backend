@@ -1,13 +1,13 @@
 const Question = require('../Model/QueModel');
-const ResponseModel = require('../Model/ResponseModel'); 
+const ResponseModel = require('../Model/ResponseModel');
 const psychometricQuestions = require('../Questions.json');
-const fs = require('fs');
-// console.log(psychometricQuestions);
+const axios = require('axios');
 
+// Save questions to the database
 async function fetchAndSaveQuestions(req, res) {
     try {
         const questions = psychometricQuestions;
-       console.log(questions);
+        console.log(questions);
 
         for (const q of questions) {
             const newQuestion = new Question({
@@ -26,6 +26,7 @@ async function fetchAndSaveQuestions(req, res) {
     }
 }
 
+// Get all questions
 async function getAllQuestions(req, res) {
     try {
         const questions = await Question.find();
@@ -37,6 +38,7 @@ async function getAllQuestions(req, res) {
     }
 }
 
+// Get question by ID
 async function getQuestionById(req, res) {
     try {
         const question = await Question.findById(req.params.id);
@@ -51,6 +53,7 @@ async function getQuestionById(req, res) {
     }
 }
 
+// Update question
 async function updateQuestion(req, res) {
     try {
         const question = await Question.findById(req.params.id);
@@ -67,6 +70,7 @@ async function updateQuestion(req, res) {
     }
 }
 
+// Delete question
 async function deleteQuestion(req, res) {
     try {
         const { id } = req.params;
@@ -80,24 +84,24 @@ async function deleteQuestion(req, res) {
     }
 }
 
-
-
 // POST route for submitting responses
 async function submitResponses(req, res) {
   try {
     const responses = req.body.responses;
     // Save the responses to the database
-    await ResponseModel.create(responses);
-    // Respond with a success message
-    res.status(200).json({ message: 'Test responses submitted successfully' });
+    await ResponseModel.create({ responses });
+
+    // Call the AI model for learning track prediction
+    const predictionResponse = await axios.post('https://ai-model-rymy.onrender.com/predict', { responses });
+
+    // Respond with the predicted learning track from the AI model
+    const learningTrack = predictionResponse.data.learningTrack;
+    res.status(200).json({ message: 'Test responses submitted successfully', learningTrack });
   } catch (error) {
     console.error('Error submitting responses:', error);
     res.status(500).json({ error: 'Internal server error' });
   }
 }
-
-
-
 
 module.exports = {
     fetchAndSaveQuestions,
