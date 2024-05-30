@@ -86,22 +86,46 @@ async function deleteQuestion(req, res) {
 
 // POST route for submitting responses
 async function submitResponses(req, res) {
-  try {
-    const responses = req.body.responses;
-    // Save the responses to the database
-    await ResponseModel.create({ responses });
-
-    // Call the AI model for learning track prediction
-    const predictionResponse = await axios.post('https://ai-model-rymy.onrender.com/predict', { responses });
-
-    // Respond with the predicted learning track from the AI model
-    const learningTrack = predictionResponse.data.learningTrack;
-    res.status(200).json({ message: 'Test responses submitted successfully', learningTrack });
-  } catch (error) {
-    console.error('Error submitting responses:', error);
-    res.status(500).json({ error: 'Internal server error' });
+    try {
+      const responses = req.body.responses;
+      console.log('Received responses:', responses);
+  
+      // Save the responses to the database
+      await ResponseModel.create({
+        userId,
+        question: "Sample question",
+        questionNumber: 1,
+        responses,
+     });
+      console.log('Responses saved to database');
+  
+      // Call the AI model for learning track prediction
+      const predictionResponse = await axios.post('https://ai-model-rymy.onrender.com/predict', { responses });
+      console.log('Prediction response:', predictionResponse.data);
+  
+      // Respond with the predicted learning track from the AI model
+      const learningTrack = predictionResponse.data.learningTrack;
+      res.status(200).json({ message: 'Test responses submitted successfully', learningTrack });
+    } catch (error) {
+      console.error('Error submitting responses:', error.message);
+  
+      if (error.response) {
+        // The request was made and the server responded with a status code outside the 2xx range
+        console.error('Response error data:', error.response.data);
+        console.error('Response error status:', error.response.status);
+        console.error('Response error headers:', error.response.headers);
+        res.status(500).json({ error: `External API error: ${error.response.data}` });
+      } else if (error.request) {
+        // The request was made but no response was received
+        console.error('No response received:', error.request);
+        res.status(500).json({ error: 'No response received from external API' });
+      } else {
+        // Something happened in setting up the request that triggered an error
+        console.error('Request setup error:', error.message);
+        res.status(500).json({ error: 'Internal server error' });
+      }
+    }
   }
-}
 
 module.exports = {
     fetchAndSaveQuestions,
